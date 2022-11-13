@@ -30,5 +30,5 @@ if(preg_match_all($regexp,$str)){
     echo "<div><br>Це слово зустрічається $maxWordCount рази<br></div>";
     }
 else
-    echo "Потрібно вводить тільки букви!!";
+    echo "У тексті мають бути букви!!";
 ?>
