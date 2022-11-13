@@ -17,10 +17,9 @@ if(preg_match_all($regexp,$str)){
     $readFile=fopen("file_1.txt","r");
     $textFile=fgets($readFile);
     fclose($readFile);
-
+    $max = "";
     $arr = explode(" ", $textFile);
     for ($i=0; $i<count($arr); $i++) {
-        $max = $arr[0];
         if(strlen($arr[$i]) > strlen($max)){
 
             $max = $arr[$i];
